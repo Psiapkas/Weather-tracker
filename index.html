@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,400i,700&display=swap" rel="stylesheet">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+ <link rel="stylesheet" href="./assets/css/style.css" />
+ <title>Whether Tracker</title>
+</head>
+<body>
+
+ <header>
+   <h1>Weather tracker</h1>
+   <p>Simple and easy to use for tracking the Weather in a particular city</p>
+</header>
+
+<main>
+    <div>
+        <div>
+            <h3>Weather search</h3>
+            <form>
+                <label>Enter City</label>
+                <input name="city" id="city" type="text" autofocus="true" class="form-input" />
+                <button type="submit" class="btn">Check City</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card">
+        <h3 class="card-header text-uppercase">previously searched locations:</h3>
+        <div id="previous-city" class="card-body">
+        </div>
+      </div>
+
+    <div class="col-12 col-md-8">
+     <h2 class="subtitle">showing current weather for: <span id="weather-search-term"></span></h2>
+     <div id="weather-container" class="list-group"></div>
+    </div>
+</main>
+
+
+<script src = "./assets/js/script.js"> </script>
+</body>
+</html>
